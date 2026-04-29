@@ -1,9 +1,9 @@
 formplayer_memory: "1024m"
 
 management_commands:
-  monolith:
+  misau_svr03:
 celery_processes:
-  monolith:
+  misau_svr03:
     repeat_record_queue,celery,case_import_queue,background_queue,export_download_queue,saved_exports_queue,analytics_queue,ucr_queue,async_restore_queue,email_queue,case_rule_queue,celery_periodic:
       concurrency: 1
     beat: {}
@@ -13,7 +13,7 @@ celery_processes:
     reminder_rule_queue:
     sms_queue:
 pillows:
-  monolith:
+  misau_svr04:
     case-pillow:
       num_processes: 1
     xform-pillow:

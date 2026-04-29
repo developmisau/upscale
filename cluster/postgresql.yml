@@ -15,12 +15,41 @@ postgres_override:
 SEPARATE_FORM_PROCESSING_DBS: False
 
 dbs:
-  # For monolith
-  form_processing: null
-  # For partitioned database
-  #form_processing:
-  #  partitions:
-  #    p1:
-  #      shards: [0, 511]
-  #    p2:
-  #      shards: [512, 1023]
+  auditcare:
+    host: misau_svr06
+  main:
+    host: misau_svr06
+  ucr:
+    host: misau_svr06
+  formplayer:
+    host: misau_svr07
+  synclogs:
+    host: misau_svr07
+  form_processing:
+    proxy:
+      host: misau_svr07
+    partitions:
+      p1:
+        shards: [0, 127]
+        host: misau_svr07
+      p2:
+        shards: [128, 255]
+        host: misau_svr07
+      p3:
+        shards: [256, 383]
+        host: misau_svr07
+      p4:
+        shards: [384, 511]
+        host: misau_svr07
+      p5:
+        shards: [512, 639]
+        host: misau_svr07
+      p6:
+        shards: [640, 767]
+        host: misau_svr07
+      p7:
+        shards: [768, 895]
+        host: misau_svr07
+      p8:
+        shards: [896, 1023]
+        host: misau_svr07
