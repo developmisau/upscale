@@ -48,13 +48,13 @@ couch_dbs:
 # See the complete list of email addresses in commcare-cloud:
 # src/commcare_cloud/ansible/group_vars/all.yml
 # https://github.com/dimagi/commcare-cloud/blob/master/src/commcare_cloud/ansible/group_vars/all.yml
-root_email: dtic@misau.gov.mz
-server_email: dtic@misau.gov.mz
-server_admin_email: dtic@misau.gov.mz
-default_from_email: dtic@misau.gov.mz
-privacy_email: dtic@misau.gov.mz
-feedback_email: dtic@misau.gov.mz
-contact_email: dtic@misau.gov.mz
+root_email: upscale.dtic@misau.gov.mz
+server_email: upscale.dtic@misau.gov.mz
+server_admin_email: upscale.dtic@misau.gov.mz
+default_from_email: upscale.dtic@misau.gov.mz
+privacy_email: upscale.dtic@misau.gov.mz
+feedback_email: upscale.dtic@misau.gov.mz
+contact_email: upscale.dtic@misau.gov.mz
 
 BROKER_URL: 'redis://:{{ REDIS_PASSWORD }}@{{ groups.redis.0 }}:6379/0'
 
