@@ -12,7 +12,7 @@ postgres_override:
   postgresql_shared_buffers: 1GB
 
 # For monolith
-SEPARATE_FORM_PROCESSING_DBS: False
+#SEPARATE_FORM_PROCESSING_DBS: False
 
 dbs:
   auditcare:
