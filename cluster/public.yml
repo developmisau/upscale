@@ -75,7 +75,7 @@ TWO_FACTOR_GATEWAY_ENABLED: False
 
 localsettings:
   ALLOWED_HOSTS:
-    - 'monolith.commcarehq.test'
+    - 'upscale.misau.gov.mz'
   BANK_ADDRESS: ~
   BANK_NAME: ~
   BANK_SWIFT_CODE: ~
