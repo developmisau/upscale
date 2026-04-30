@@ -1,6 +1,5 @@
 dev_users:
   present:
     - demis
-    - paulo
-    - example  # change this and the corresponding example.pub file
+ # change this and the corresponding example.pub file
   absent: []
