@@ -1,7 +1,8 @@
 SITE_HOST: 'upscale.misau.gov.mz'
 
 special_sites: []
-fake_ssl_cert: True
+fake_ssl_cert: True 
+  #fake_ssl_cert: False
 # when fake_ssl_cert is False, this parameter set soft links to the Letsencyrpt generated certificates
 # and updates the nginx configuration.
 letsencrypt_cchq_ssl: True

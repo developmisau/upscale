@@ -1,5 +1,7 @@
 dev_users:
   present:
-    - pc
+      - admin
+      - pc
+      - psilva
  # change this and the corresponding example.pub file
   absent: []
